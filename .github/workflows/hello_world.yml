@@ -3,7 +3,6 @@ run-name: ${{ github.actor }} running hello world
 on: [push]
 jobs:
   build-n-test:
-    runs-on: rocky9-latest
     runs-on: ubuntu-latest
     container:
       image: rockylinux/rockylinux:9
