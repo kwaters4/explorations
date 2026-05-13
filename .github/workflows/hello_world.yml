@@ -8,7 +8,7 @@ jobs:
       image: rockylinux/rockylinux:9
     steps:
       - uses: actions/checkout@v6
-      - run: dnf install cmake
+      - run: dnf -y install cmake
       - run: sh build.sh
       - run: sh test.sh
 
