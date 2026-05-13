@@ -2,7 +2,7 @@ name: system specs
 run-name: ${{ github.actor }} probe system specs
 on: [push]
 jobs:
-  build-n-test:
+  lscpu-lsmem:
     runs-on: ubuntu-latest
     container:
       image: rockylinux/rockylinux:10
