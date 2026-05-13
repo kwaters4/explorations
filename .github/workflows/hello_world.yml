@@ -5,7 +5,7 @@ jobs:
   build-n-test:
     runs-on: ubuntu-latest
     container:
-      image: rockylinux/rockylinux:9
+      image: rockylinux/rockylinux:10
     steps:
       - uses: actions/checkout@v6
       - run: dnf -y install cmake
