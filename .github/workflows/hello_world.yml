@@ -1,0 +1,15 @@
+name: hello_world
+run-name: ${{ github.actor }} running hello world
+on: [push]
+jobs:
+  build-n-test:
+    runs-on: rocky9-latest
+    runs-on: ubuntu-latest
+    container:
+      image: rockylinux/rockylinux:9
+    steps:
+      - uses: actions/checkout@v6
+      - run: cat/etc/os-release
+      - run: sh build.sh
+      - run: sh test.sh
+
