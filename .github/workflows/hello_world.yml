@@ -9,6 +9,7 @@ jobs:
     steps:
       - uses: actions/checkout@v6
       - run: dnf -y install cmake
+      - run: which gcc
       - run: sh build.sh
       - run: sh test.sh
 
